@@ -1,5 +1,4 @@
 import {createStackNavigator} from 'react-navigation-stack';
-import {createAppContainer} from 'react-navigation';
 import Home from '../screens/home';
 import ReviewDetails from '../screens/reviewDetails';
 import About from '../screens/about';
@@ -28,6 +27,6 @@ const HomeStack = createStackNavigator(screens, {
   },
 });
 
-export default createAppContainer(HomeStack);
+export default HomeStack;
 
 //NavigationOptions are options which we can customize section with. I noticed that section name is automatically taken from the name of the section, until we specify the navigationOption of title.
