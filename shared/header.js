@@ -31,15 +31,19 @@ export default function Header({navigation, title}) {
 
 const styles = StyleSheet.create({
   header: {
-    width: '100%',
-    height: '100%',
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: [{translateX: -210}, {translateY: -30}],
+    width: 420,
+    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
   icon: {
     position: 'absolute',
-    left: 0,
+    left: 16,
   },
   headerText: {
     fontWeight: 'bold',
