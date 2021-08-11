@@ -12,7 +12,7 @@ export default function Header({navigation, title}) {
       style={styles.header}>
       <FontAwesome5
         style={styles.icon}
-        name={'bars'}
+        name="bars"
         solid
         size={28}
         color="#333"
@@ -31,11 +31,7 @@ export default function Header({navigation, title}) {
 
 const styles = StyleSheet.create({
   header: {
-    position: 'absolute',
-    left: '50%',
-    top: '50%',
-    transform: [{translateX: -210}, {translateY: -30}],
-    width: 420,
+    width: '100%',
     height: 60,
     flexDirection: 'row',
     alignItems: 'center',
